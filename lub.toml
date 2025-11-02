@@ -1,0 +1,6 @@
+[packages]
+lcc-stdlib = "https://github.com/svpz/lcc-stdlib"
+
+[commands]
+build = "lcc main.c"
+exe = "main.exe"
