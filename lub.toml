@@ -4,3 +4,13 @@ lcc-stdlib = "https://github.com/svpz/lcc-stdlib"
 [commands]
 build = "lcc main.c"
 exe = "main.exe"
+
+# Simple backend selection
+[compiler]
+backend = "x86_64_windows"
+
+[compiler.tools]
+assembler = "nasm"
+assembler_flags = ["-f", "win64"]
+linker = "gcc"
+linker_flags = []
